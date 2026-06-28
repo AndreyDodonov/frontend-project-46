@@ -2,7 +2,6 @@
 import _ from 'lodash';
 
 export function compare(file1, file2) {
-  console.log('from compare');
   const keys1 = Object.keys(file1);
   const keys2 = Object.keys(file2);
   const sortedKeys = _.sortBy(_.union(keys1, keys2));
