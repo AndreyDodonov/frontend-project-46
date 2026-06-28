@@ -15,3 +15,6 @@ lint-fix:
 
 test-coverage:
 	npm run test-coverage
+
+test:
+	npm run test
