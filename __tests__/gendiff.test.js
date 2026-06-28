@@ -18,9 +18,9 @@ test('flat JSON compare', () => {
 })
 
 test('flat YAML compare', () => {
-  const file1 = parse(getFixturePath('file1.yml'));
-  const file2 = parse(getFixturePath('file2.yml'));
-  const expected = fs.readFileSync(getFixturePath('expected.txt'), 'utf-8').replace(/\r\n/g, '\n');
+  const file1 = parse(getFixturePath('file1.yml'))
+  const file2 = parse(getFixturePath('file2.yml'))
+  const expected = fs.readFileSync(getFixturePath('expected.txt'), 'utf-8').replace(/\r\n/g, '\n')
 
-  expect(compare(file1, file2)).toEqual(expected);
-});
+  expect(compare(file1, file2)).toEqual(expected)
+})
